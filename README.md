@@ -5,4 +5,4 @@ YOLO based model to detect PPE
 
 ****add video file to video folder for offline streaming
 
-run PPE_Detector.py
+    run PPE_Detector.py
