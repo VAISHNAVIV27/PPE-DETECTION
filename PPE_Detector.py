@@ -5,6 +5,7 @@ import numpy as np
 
 detector = Yolo(r"Ml_model\yolov3-tiny-obj.cfg",r"Ml_model\yolov3-tiny-obj_best.weights",["person","apron","without_apron","helmet","without_helmet"])
 cap = cv2.VideoCapture(r"Videos\PPE_2.mp4")
+#cap = cv2.VideoCapture(0)    #for live video streaming
 height = 540
 width = 960
 fps = 7
