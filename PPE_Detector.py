@@ -3,13 +3,13 @@ import cv2
 import time
 import numpy as np
 
-detector = Yolo(r"C:\Users\vaish_pz1\Desktop\PPE\INFERENCE\Ml_model\yolov3-tiny-obj.cfg",r"C:\Users\vaish_pz1\Desktop\PPE\INFERENCE\Ml_model\yolov3-tiny-obj_best.weights",["person","apron","without_apron","helmet","without_helmet"])
-cap = cv2.VideoCapture(r"C:\Users\vaish_pz1\Desktop\PPE\Videos\PPE_2.mp4")
+detector = Yolo(r"Ml_model\yolov3-tiny-obj.cfg",r"Ml_model\yolov3-tiny-obj_best.weights",["person","apron","without_apron","helmet","without_helmet"])
+cap = cv2.VideoCapture(r"Videos\PPE_2.mp4")
 height = 540
 width = 960
 fps = 7
 fourcc = cv2.VideoWriter_fourcc(*'MPEG')
-videosave = cv2.VideoWriter(r'C:\Users\vaish_pz1\Desktop\PPE\Inference.MP4',fourcc, fps, (width, height))
+videosave = cv2.VideoWriter(r'Inference.MP4',fourcc, fps, (width, height))
 
 ret, frame = cap.read()
 ft = 10
